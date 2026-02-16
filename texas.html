@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil & Komunitas Neon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-color: #050a14;
+            --card-bg: rgba(15, 23, 42, 0.8);
+            --neon-blue: #00f3ff;
+            --neon-glow: 0 0 15px rgba(0, 243, 255, 0.6);
+            --text-color: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: radial-gradient(circle at 50% 0%, #1a2c4e 0%, var(--bg-color) 80%);
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* --- JAM DIGITAL --- */
+        #clock {
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--neon-blue);
+            text-shadow: var(--neon-glow);
+            margin-bottom: 2rem;
+            letter-spacing: 3px;
+        }
+
+        /* --- HERO PROFILE BLOCK --- */
+        .profile-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(0, 243, 255, 0.3);
+            border-radius: 20px;
+            padding: 25px;
+            display: flex;
+            align-items: center; /* Foto & teks sejajar tengah secara vertikal */
+            gap: 20px;
+            box-shadow: var(--neon-glow);
+            backdrop-filter: blur(10px);
+            margin-bottom: 2.5rem;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 15px; /* Sedikit kotak melengkung agar modern */
+            object-fit: cover;
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 10px rgba(0, 243, 255, 0.4);
+            flex-shrink: 0; /* Mencegah foto gepeng */
+        }
+
+        .profile-info {
+            text-align: left;
+        }
+
+        .profile-info h1 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            text-shadow: 0 0 8px var(--neon-blue);
+        }
+
+        .profile-info p {
+            font-size: 0.85rem;
+            color: #b0c4de;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        /* Sosmed Icons di dalam Block Profile */
+        .social-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-row a {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        .social-row a:hover {
+            color: var(--neon-blue);
+            transform: scale(1.2);
+        }
+
+        /* --- LINKS SECTION --- */
+        .section-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--neon-blue);
+            margin-bottom: 1rem;
+            padding-left: 5px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .link-card:hover {
+            background: rgba(0, 243, 255, 0.1);
+            border-color: var(--neon-blue);
+            box-shadow: var(--neon-glow);
+            transform: translateX(10px); /* Efek geser saat hover */
+        }
+
+        .link-icon { font-size: 1.2rem; margin-right: 15px; color: var(--neon-blue); }
+        .link-text { font-weight: 500; font-size: 1rem; }
+
+        footer { text-align: center; margin-top: 3rem; font-size: 0.7rem; color: #445566; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="clock">00:00:00</div>
+
+        <div class="profile-card">
+            <img src="Texas.jpeg" alt="Foto" class="profile-img">
+            
+            <div class="profile-info">
+                <h1>TEXAS ID</h1>
+                <p>Hi Selamat dataqng di website offc TEXAS ID website kami yang asli hanya iniq seqlain ini bisaq di pastikan clone/penipu.</p>
+                
+                <div class="social-row">
+                    <a href="LINK_IG_KAMU" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="tiktok.com/texasft" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">Grup Komunitas</div>
+        
+        <a href="LINK_WA" class="link-card">
+            <i class="fab fa-whatsapp link-icon"></i>
+            <span class="link-text">LANGGANAN FT BY PERDAN #1</span>
+        </a>
+
+        <a href="LINK_WA" class="link-card">
+    <i class="fab fa-whatsapp link-icon"></i>
+    <span class="link-text">INFO FT CS 2K BY WILL #1</span>
+</a>
+
+<a href="LINK_WA" class="link-card">
+    <i class="fab fa-whatsapp link-icon"></i>
+    <span class="link-text">INFO FT CS 2K BY WILL #2</span>
+</a>
+
+<a href="LINK_WA" class="link-card">
+    <i class="fab fa-whatsapp link-icon"></i>
+    <span class="link-text">ALL INFO TEXAS FT ( CH )</span>
+</a>
+
+
+        <div class="section-title" style="margin-top: 2rem;">Lainnya</div>
+
+        <a href="mailto:wildanxyz34@gmail.com" class="link-card">
+            <i class="fas fa-envelope link-icon"></i>
+            <span class="link-text">Hubungi Saya</span>
+        </a>
+
+        <footer>&copy; 2024 Design by Gemini.</footer>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000);
+        updateClock(); // Jalankan langsung
+    </script>
+
+</body>
+</html>
